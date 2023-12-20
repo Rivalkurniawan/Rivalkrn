@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABOUT US</title>
+	<link rel="stylesheet" type="text/css" href="stylecss.html">
+	<style type="text/css">
+	body{
+			background-color: #FFE4C4;
+		}
+			#container{
+				width: 980px;
+				margin-left: auto;
+				margin-right: auto;
+
+		}
+		#header{
+			width: 980px;
+			height: 280px;
+			background-color: black;
+			background-image: url("images/banerMadrid1.jpg");
+			background-size: 100% 100%;
+		}
+		#navigasi{
+		    height: 65px;
+		 	background-color: #F5DEB3;
+		 	font-size: 20px;
+		 	text-align: left;
+		 	padding: 10px 10px 10px ;
+		}
+		#navigasi a{
+			color: black;
+			padding: 10px 10px 10px ;
+		}
+		#date-time {
+            font-size: 20px;
+            margin-top: 20px;
+            color: black;
+            text-align: left;
+        }
+		#content{
+			width: 950px;
+			height: auto;
+			background-color: #fff;
+			padding: 5px 15px 5px 15px;
+		}
+		#content p{
+			font-family: verdana;
+			font-size: 16px;
+			text-align: justify;
+			color: black;
+		}
+		#content h1{
+			text-align: left;
+			color: black;
+		
+		}
+		#footer{
+			width: 980px;
+			height: 70px;
+			background-color: black;
+
+			padding-top: 30px;
+		}
+		#footer p{
+			color: #ffffff;
+			text-align: center;
+
+		}
+	</style>
+		
+
+
+</head>
+<body>
+<div id="container">
+	<div id="header"></div>
+	<div id="navigasi">
+		<a href="index.html">HOME</a>
+    	<a href="Gallery.html">GALLERY</a>
+    	<a href="AboutUS.html">ABOUT US</a>
+    	<a href="ContactUS.html">CONTACT US</a>
+    	<div id="date-time"></div>
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var dateTimeString = now.toLocaleDateString('en-US', options);
+
+            document.getElementById('date-time').innerText = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time immediately
+        updateDateTime();
+    </script>
+</body>
+	
+	</div>
+	<div id="content">
+		<!--java-->
+		
+		 <h1>Tentang Kami</h1>
+		<p text align="right">Didirikan pada tahun 1902 sebagai Klub Sepak Bola Madrid , tim ini secara tradisional mengenakan seragam kandang berwarna putih sejak awal. Kata Real adalah bahasa Spanyol yang berarti Kerajaan dan diberikan kepada klub oleh Raja Alfonso XIII pada tahun 1920 bersama dengan mahkota kerajaan di lambangnya. Tim ini memainkan pertandingan kandangnya di Stadion Santiago Bernabéu di pusat kota Madrid sejak tahun 1947. Tidak seperti kebanyakan entitas olahraga Eropa, anggota Real Madrid telah memiliki dan mengoperasikan klub sepanjang sejarahnya.</p>
+		<p>Real Madrid memantapkan dirinya sebagai kekuatan utama dalam sepak bola Spanyol dan Eropa selama tahun 1950an, memenangkan lima Piala Eropa berturut-turut dan mencapai final tujuh kali. Kesuksesan ini ditiru di liga, di mana klub menang lima kali dalam kurun waktu tujuh tahun. Tim ini, yang terdiri dari pemain-pemain seperti Alfredo Di Stéfano, Ferenc Puskás, Francisco Gento, Raymond Kopa, dan José Santamaría, dianggap oleh beberapa orang di olahraga ini sebagai tim terhebat sepanjang masa.</p>
+	</div>
+	<div id="footer">
+		<p>&copy; Rival Kurniawan [231011701195 | 01SIFP009]</p>
+	</div>	
+</div>
+</body>
+</html>

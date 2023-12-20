@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DESIGN LAYOUT</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+<div id="container">
+    <div  id="header"></div>
+    <div id="navigasi">
+    	<a href="index2.html">HOME</a>
+    	<a href="Gallery.html">GALLERY</a>
+    	<a href="AboutUS.html">ABOUT US</a>
+    	<a href="ContactUS.html">CONTACT US</a>
+        <div id="date-time"></div>
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var dateTimeString = now.toLocaleDateString('en-US', options);
+
+            document.getElementById('date-time').innerText = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time immediately
+        updateDateTime();
+    </script>
+    </body>
+    </div>
+    <div id="content">
+    	<h1>Sejarah Berdiri</h1>
+        <img src="images/download.png.jpg" width="50" height="200">
+    	<p>Real Madrid Club de Fútbol (pengucapan bahasa Spanyol [reˈal maˈðɾið ˈkluβ ðe ˈfutβol]; Royal Madrid Football Club, umumnya dikenal sebagai Real Madrid, adalah klub sepak bola profesional yang berbasis di Madrid, Spanyol.</p>
+
+    	<p>Didirikan pada tahun 1902 sebagai <i>Madrid Football Club</i>, secara tradisional mengenakan kostum kandang putih. Kata Real ("dari kerajaan") Spanyol dan dianugerahkan ke klub oleh <u>Raja Alfonso XIII</u> pada tahun 1920 bersama-sama dengan mahkota kerajaan di lambang klub. Klub ini telah memainkan pertandingan kandang di Stadion Santiago Bernabéu dengan kapasitas 85.454 di pusat kota Madrid sejak tahun 1947.</p>
+       <hr>
+    	<p>Real madrid merupakan salah satu klub sepak bola terkaya di dunia dalam hal pendapatan, senilai <i><u>€757,3 juta</i></u> dan total aset yang senilai <i><u>€3,8 miliar/$4,2 miliar</i></u> di 2019.Ini adalah salah satu dari tiga klub untuk tidak pernah terdegradasi dari liga papan atas sepak bola Spanyol, bersama dengan Athletic Bilbao dan Barcelona. Real madrid juga merupakan club dengan torehan piala UCL terbanyak. Real Madrid memiliki banyak persaingan lama, terutama <i>El Clásico</i> dengan <mark>Barcelona</mark> dan <i>El Derbi madrileño</i> dengan <mark>Atlético Madrid</mark>.</p>
+
+    	<p>Real madrid memantapkan dirinya sebagai kekuatan utama dalam sepak bola Spanyol dan Eropa selama tahun 1950. Di dalam negeri, real madrid juga merupakan salah satu klub terbaik abad ke-20 menurut FIFA. Klub ini menjuarai <i>Liga Champions</i> 3 musim berturut-turut dibawah kepelatihan Zinedine Zidane dan dengan mesin golnya yaitu pemain terbaik dunia Cristiano Ronaldo. Dalam kompetisi domestik, klub ini telah meraih 35 gelar <i>La Liga</i> (rekor), 20 gelar <i>Piala Raja Spanyol</i>, 12 <i>Piala Super Spanyol</i>, 1 <i>Copa Eva Duarte</i>, 1 <i>Copa de la Liga</i>. Di kompetisi tingkat Eropa dan Dunia, real madrid telah meraih 14 gelar <i>Piala Champions Eropa/Liga Champions UEFA</i> (rekor), 2 <i>Piala UEFA/Liga Eropa UEFA</i>, 5 <i>Piala Super UEFA</i>, dan 9 <i>kejuaraan dunia antar klub</i> (3 <i>Piala Interkontinental</i> , 5 <i>Piala Dunia Antarklub FIFA</i> dan 1 <i>Piala Ibero-American</i>).</p>
+    </div>
+    
+    <div id="footer">
+    	<p>&copy;Copyright 2023 - Rival Kurniawan [231011701195 | 01SIFP009]</p>
+    </div>
+</div>    
+</body>
+</html>

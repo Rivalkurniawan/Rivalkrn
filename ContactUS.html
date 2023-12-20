@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACT US</title>
+	<link rel="stylesheet" type="text/css" href="stylecss.html">
+	<style type="text/css">
+		body{
+			background-color: #FFE4C4;
+		}
+			#container{
+				width: 980px;
+				margin-left: auto;
+				margin-right: auto;
+		
+		}
+		#header{
+			width: 980px;
+			height: 280px;
+			background-color: black;
+			background-image: url("images/banerMadrid1.jpg");
+			background-size: 100% 100%;
+		}
+		#navigasi{
+		height: 65px;
+		 	background-color: #F5DEB3;
+		 	font-size: 20px;
+		 	text-align: left;
+		 	padding: 10px 10px 10px ;
+		}
+		#navigasi a{
+			color: black;
+			padding: 10px 10px 10px;
+		}
+		#date-time {
+            font-size: 20px;
+            margin-top: 20px;
+            color: black;
+            text-align: left;
+        }
+		#content{
+			width: 950px;
+			height: auto;
+			padding: 5px 15px 5px 15px;
+			font-size: 16px;
+		}
+		#content p{
+			font-family: verdana;
+			font-size: 16px;
+			background-color: white;
+			text-align: justify;
+			color: black;
+		}
+		#content h1{
+			text-align: left;
+			color: black;
+		}
+		#imgkanan{
+			float: right;
+			margin-left: 20px;
+			width: 30%;
+			height: auto;
+		}
+		#footer{
+			width: 980px;
+			height: 70px;
+			background-color: black;
+			padding-top: 30px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#footer p{
+			color: #ffffff;
+			text-align: center;
+
+		}
+		
+		.body{
+			font-family: arial;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.wrapper{
+			width: 500px;
+			margin: auto;
+			border: 1px solid #ddd;
+			padding: 10px 15px;
+			border-radius: 10px;
+		}
+		input[type=text],input[type=date],textarea,select{
+			width: 100%;
+			background-color: #BCC6CC;
+			padding: 10px 15px;
+			color: black;
+			border-radius: 5px;
+			border: none;
+			box-sizing: border-box;
+		}
+		input [type=radio], input[type=chechkbox]{
+			height: 18px;
+			width: 18px;
+			vertical-align: middle;
+			margin: 10px 5px 15px 10px;
+		}
+		input[type=submit]{
+			background-color:#616D7E ;
+			color: black;
+			padding: 10px 15px;
+			border-radius: 5px;
+			border: none;
+		}
+		h1{
+			text-align: justify;
+			font-family: arial;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+			<div id="navigasi">
+		<a href="index.html">HOME</a> 
+		<a href="Gallery.html">GALLERY</a> 
+		<a href="AboutUS.html">ABOUT US</a> 
+		<a href="ContactUS.html">CONTACT US</a>
+	
+		<div id="date-time"></div>
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var dateTimeString = now.toLocaleDateString('en-US', options);
+
+            document.getElementById('date-time').innerText = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time immediately
+        updateDateTime();
+    </script>
+</body>
+</div>
+        <!--java-->
+
+        <h1> Hubungi Kami</h1>
+	
+		
+			
+			<form>
+				Name			: <input type="text" name="nama" placeholder="Your Name">
+				Address			: <textarea name="address"></textarea>
+				City			: <select>
+									<option>--Select--</option>
+									<option>Jakarta</option>
+									<option>Semarang</option>
+									<option>Bandung</option>
+									<option>Denpasar</option>
+									<option>Papua</option>
+									<option>Medan</option>
+									<option>Balikpapan</option>
+									<option>Makassar</option>
+									</select>
+				Comment			: <input type="text" name="comment">
+				
+
+				<input type="submit" name="submit" value="kirim" >
+			</form>
+			
+		</div>
+</body>
+<div id="footer">
+		<p>&copy; Rival Kurniawan [231011701195 | 01SIFP009]</p>
+	</div>	
+
+
+</body>
+</html>

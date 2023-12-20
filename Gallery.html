@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GALLERY FOTO</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+        .galeri{
+            float: left;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid #333;    
+    </style>
+</head>
+<body>
+<div id="container">
+    <div  id="header"></div>
+    <div id="navigasi">
+    	<a href="index.html">HOME</a>
+        <a href="Gallery.html">GALLERY</a>
+    	<a href="AboutUS.html">ABOUT US</a>
+    	<a href="ContactUS.html">CONTACT US</a>
+        <div id="date-time"></div>
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                timeZoneName: 'short'
+            };
+
+            var dateTimeString = now.toLocaleDateString('en-US', options);
+
+            document.getElementById('date-time').innerText = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time immediately
+        updateDateTime();
+    </script>
+</body>
+    
+    </div>
+
+    <div id="content">
+        
+    	
+</head>
+
+<body>
+   
+    <div class="wrapper">
+        <h1>Gallery Foto</h1>
+    <div class="galeri">
+        <img src="images/FotoUcl2018.jpg">
+        <p>Champions League 2018</p>
+    </div>
+    <div class="galeri">
+        <img src="images/TrioMCK.jpg">
+        <p>Trio Midflider Real Madrid</p>
+    </div>
+    <div class="galeri">
+        <img src="images/UCL2022.jpg">
+        <p>Champions League 2022</p>
+    </div>
+    <div class="galeri">
+        <img src="images/FotoMamangDodo.jpg">
+        <p>Legend Cristiano Ronaldo</p>
+    </div>
+    <div class="galeri">
+        <img src="images/FotoMamangSergio.jpg">
+        <p>Legend Sergio Ramos</p>
+    </div>
+    <div class="galeri">
+        <img src="images/Benzema Ucl.webp">
+        <p>Legend Karim Benzema</p>
+    </div>
+<center>
+    <div> <iframe width="560" height="315" src="https://www.youtube.com/embed/t_xQkG6tUxQ?si=B_YCkVmqd1aX33U-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    </div></center>
+    
+    <div id="footer">
+    	<p>&copy;Copyright 2023 - Rival Kurniawan [231011701195 | 01SIFP009]</p>
+    </div>
+</div>    
+</body>
+</html>

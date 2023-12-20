@@ -1,0 +1,78 @@
+
+		body{
+		   background-color: #FFE4C4; 
+		 }
+         #container{
+          width: 980px;
+          margin-left: auto;
+          margin-right: auto;
+         }
+		#header{ 
+		   width: 980px;
+		   height: 280px;
+		   background-color: #333; 
+		   background-image:  url("images/banerMadrid1.jpg");
+		   background-size: 100% 100%;
+		   
+		 }
+		 #navigasi{
+		 	height: 65px;
+		 	background-color: #F5DEB3;
+		 	font-size: 20px;
+		 	text-align: left;
+		 	padding: 10px 10px 10px ;
+
+		 }
+		 #navigasi a{
+           color: black;
+           padding: 10px 10px 10px ;
+		 
+		 }	
+		 #date-time {
+            font-size: 20px;
+            margin-top: 20px;
+            color: black;
+            text-align: left;
+
+        }
+		 
+		 #content{
+		 	width: 950px;
+		 	height: auto;
+		 	background-color: white;
+		 	
+		    padding: 5px 15px 5px 15px;
+		 }
+		 #content h2{
+		 	color: #ff0000;
+		 }
+		 h2{
+		 	font-color: #FFE4C4;
+		 }
+		 #content p{
+            font-family: verdana;
+            font-size: 16px;
+            text-align: justify;
+            color: #333;   
+		 }
+		 img{
+		 	width: 200px;
+		 	padding right: 10px;
+		 	padding-left: 10px;
+		 	padding: 10px;
+		 	float: right;
+		 	float: left;
+		 }
+		  #footer{
+		 	width: 980px;
+		 	height: 70px;
+		 	background-color: black;
+		 	
+		    padding-top: 30px;
+		 }
+		 #footer p{
+             color: #fff;
+             text-align: center;
+		 } 
+
+		 
